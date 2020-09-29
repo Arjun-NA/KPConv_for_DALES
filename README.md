@@ -94,5 +94,5 @@ Our code is released under MIT License (see LICENSE file for details).
 
 ## TO USE IN DALES DATASET
 
-Use the convert.py to convert the DALES ascii ply file to bin ply file.
+Use the [convert.py](.convert.py) to convert the DALES ascii ply file to bin ply file.
 copy the convert.py to the location of the ascii ply files and run it.
