@@ -91,3 +91,8 @@ Our code is released under MIT License (see LICENSE file for details).
 * 03/05/2019: Bug found with TF 1.13 and CUDA 10.
 * 19/04/2019: Initial release.
 
+
+## TO USE IN DALES DATASET
+
+Use the convert.py to convert the DALES ascii ply file to bin ply file.
+copy the convert.py to the location of the ascii ply files and run it.
