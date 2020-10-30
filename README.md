@@ -1,7 +1,7 @@
 
 ![Intro figure](https://github.com/HuguesTHOMAS/KPConv/blob/master/doc/Github_intro.png)
 
-[Created by Hugues THOMAS](https://github.com/HuguesTHOMAS/KPConv)
+![Created by Hugues THOMAS](https://github.com/HuguesTHOMAS/KPConv)
 
 
 ### Update 27/04/2020: [PyTorch implementation](https://github.com/HuguesTHOMAS/KPConv-PyTorch) available. With SemanticKitti, and Windows supported.
