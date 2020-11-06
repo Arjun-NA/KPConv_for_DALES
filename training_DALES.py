@@ -94,8 +94,8 @@ class DalesConfig(Config):
 
     # KPConv specific parameters
     num_kernel_points = 15
-    first_subsampling_dl = 0.08
-    in_radius = 4.0
+    first_subsampling_dl = 0.250
+    in_radius = 20.0
 
     # Density of neighborhoods for deformable convs (which need bigger radiuses). For normal conv we use KP_extent
     density_parameter = 5.0
@@ -128,7 +128,7 @@ class DalesConfig(Config):
     #####################
 
     # Maximal number of epochs
-    max_epoch = 600
+    max_epoch = 850
 
     # Learning rate management
     learning_rate = 1e-2
@@ -137,10 +137,10 @@ class DalesConfig(Config):
     grad_clip_norm = 100.0
 
     # Number of batch
-    batch_num = 8
+    batch_num = 4
 
     # Number of steps per epochs (cannot be None for this dataset)
-    epoch_steps = 100
+    epoch_steps = 741
 
     # Number of validation examples per epoch
     validation_size = 50
@@ -180,13 +180,13 @@ if __name__ == '__main__':
     ##########################
 
     # Choose which gpu to use
-    GPU_ID = '0'
+    # GPU_ID = '0'
 
     # Set GPU visible device
-    os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
+    # os.environ['CUDA_VISIBLE_DEVICES'] = GPU_ID
 
     # Enable/Disable warnings (set level to '0'/'3')
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
     ###########################
     # Load the model parameters
