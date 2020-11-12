@@ -44,5 +44,15 @@ since the article submission.
 ## TO USE IN DALES DATASET
 
 Use the [convert.py](convert.py) to convert the DALES ascii ply file to bin ply file.
-copy the convert.py to the location of the ascii ply files and run it.\
-Utilize [requirements](requirements.txt) and [conda_env](conda_requirements.txt)
+copy the convert.py to the location of the ascii ply files and run it.<br>
+Utilize [requirements](pipenvlist.txt) and [conda_env](envlist.txt)
+For conda env creation you can use :
+```
+conda create --name <name of your choice> --file envlist.txt
+```
+and for pip
+```
+pip install -r pipenvlist.txt
+```
+
+
