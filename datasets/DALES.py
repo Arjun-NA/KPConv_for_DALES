@@ -128,11 +128,11 @@ class DalesDataset(Dataset):
         ##########################
 
         # Path of the folder containing ply files
-        self.path = '../Data/dales_semantic_segmentation_ply/dales_ply'
+        self.path = '../Data/Dales'
 
         # Path of the training files
         self.train_path = join(self.path, 'train_bin')
-        self.test_path = join(self.path, 'chunk1')
+        self.test_path = join(self.path, 'test_bin')
 
 
         # List of training and test files
@@ -213,7 +213,7 @@ class DalesDataset(Dataset):
                 # Read ply file
                 data = read_ply(file_path)
                 points = np.vstack((data['x'], data['y'], data['z'])).astype(np.float32).T
-                reflectance = np.expand_dims(data['intensity'], 1).astype(np.float32)
+                reflectance = np.expand_dims(data['reflectance'], 1).astype(np.float32)
                 if cloud_split == 'test':
                     int_features = None
                 else:
