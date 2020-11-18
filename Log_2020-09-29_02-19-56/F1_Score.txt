@@ -1,0 +1,46 @@
+All files good
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5080_54400.ply
+micro F1: 	 0.971800472005263
+macro F1: 	 0.7125992781285472
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5080_54470.ply
+micro F1: 	 0.9712402459534125
+macro F1: 	 0.7603846950573112
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5100_54440.ply
+micro F1: 	 0.9339789109964945
+macro F1: 	 0.7407313819921052
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5100_54490.ply
+micro F1: 	 0.9733621763924409
+macro F1: 	 0.7564696469960107
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5120_54445.ply
+micro F1: 	 0.9724872673445031
+macro F1: 	 0.784785751017888
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5135_54430.ply
+micro F1: 	 0.9759974172148351
+macro F1: 	 0.764491141588723
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5135_54435.ply
+micro F1: 	 0.977462815230023
+macro F1: 	 0.7926956961914926
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5140_54390.ply
+micro F1: 	 0.964461245744877
+macro F1: 	 0.6541784907805973
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5150_54325.ply
+micro F1: 	 0.9740829226300796
+macro F1: 	 0.6994128385643351
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5155_54335.ply
+micro F1: 	 0.9722904007687808
+macro F1: 	 0.5379838415421019
+
+ Loading....  ../Results_from_RED/Log_2020-09-29_02-19-56/predictions/bin_5175_54395.ply
+micro F1: 	 0.9705561295053557
+macro F1: 	 0.7616489924197007
+ Final Avg micro :  0.9688836367078242 |  Avg  macro :  0.7241256140253466
