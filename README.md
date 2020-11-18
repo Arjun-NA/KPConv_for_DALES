@@ -54,5 +54,6 @@ and for pip
 ```
 pip install -r pipenvlist.txt
 ```
-
-
+## MY RESULTS IN DALES DATASET
+The result of the testing is uploaded [here](https://indiana-my.sharepoint.com/:u:/g/personal/arjuna_iu_edu/ERlV6lBVnQtMvAyfloE354YBNUglxQbroAUnGds8x8Rjcg?e=vIk490)
+and the [test_accuracy.py](./test_accuracy.py) was used to calculate F1 scores which gave [this](./Log_2020-09-29_02-19-56/F1_Score.txt) result with Final Avg micro F1 : 0.97 | Avg macro F1: 0.72, which is not upto what they have mentioned (may need some parameter tuning) and as I spoke with them I got to know that they had used only portion of their dataset. But still this result was far better than any other point convolutions I had used.
