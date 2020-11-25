@@ -39,7 +39,7 @@ from datasets.S3DIS import S3DISDataset
 from datasets.Scannet import ScannetDataset
 from datasets.NPM3D import NPM3DDataset
 from datasets.Semantic3D import Semantic3DDataset
-
+from datasets.DALES import DalesDataset
 
 # ----------------------------------------------------------------------------------------------------------------------
 #
@@ -102,6 +102,8 @@ def test_caller(path, step_ind, on_val):
         dataset = ShapeNetPartDataset(config.dataset.split('_')[1], config.input_threads)
     elif config.dataset == 'NPM3D':
         dataset = NPM3DDataset(config.input_threads, load_test=(not on_val))
+    elif config.dataset == 'DALES':
+        dataset = DalesDataset(config.input_threads, load_test=(not on_val))
     elif config.dataset == 'Semantic3D':
         dataset = Semantic3DDataset(config.input_threads)
     else:
@@ -133,6 +135,8 @@ def test_caller(path, step_ind, on_val):
     elif config.dataset.startswith('Scannet'):
         model = KernelPointFCNN(dataset.flat_inputs, config)
     elif config.dataset.startswith('NPM3D'):
+        model = KernelPointFCNN(dataset.flat_inputs, config)
+    elif config.dataset.startswith('DALES'):
         model = KernelPointFCNN(dataset.flat_inputs, config)
     elif config.dataset.startswith('ModelNet40'):
         model = KernelPointCNN(dataset.flat_inputs, config)
@@ -186,6 +190,11 @@ def test_caller(path, step_ind, on_val):
             tester.test_cloud_segmentation_on_val(model, dataset)
         else:
             tester.test_cloud_segmentation(model, dataset)
+    elif config.dataset.startswith('DALES'):
+        if on_val:
+            tester.test_cloud_segmentation_on_val(model, dataset)
+        else:
+            tester.test_cloud_segmentation(model, dataset)
     elif config.dataset.startswith('ModelNet40'):
         tester.test_classification(model, dataset)
     else:
@@ -223,7 +232,7 @@ if __name__ == '__main__':
     #       > 'results/Log_YYYY-MM-DD_HH-MM-SS': Directly provide the path of a trained model
     #
 
-    chosen_log = 'last_ModelNet40'
+    chosen_log = 'Log_2020-09-15_02-29-55'
 
     #
     #   You can also choose the index of the snapshot to load (last by default)
