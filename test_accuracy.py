@@ -16,8 +16,8 @@ for each in ignored_labels: final_labels.remove(each)
 # Given below is the path to test output and ground truth files.
 # All files in test output file should be present in ground truth folder for successful execution of this file
 # This Also works in windows
-test_predictions_path = '../Results_from_RED/Log_2020-09-29_02-19-56/predictions/'
-test_groundtruth_path = '../Data/dales_semantic_segmentation_ply/dales_ply/test_bin/'
+test_predictions_path = 'results/Log_2020-09-29_02-19-56/predictions/'  
+test_groundtruth_path = '../Data/test_bin/'
 files_pred = [f for f in os.listdir(test_predictions_path) if f[-4:] == '.ply']
 files_ground = [f for f in os.listdir(test_groundtruth_path) if f[-4:] == '.ply']
 if(all(each in files_ground for each in files_pred )):
