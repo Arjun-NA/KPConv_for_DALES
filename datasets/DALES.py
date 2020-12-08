@@ -128,8 +128,8 @@ class DalesDataset(Dataset):
         ##########################
 
         # Path of the folder containing ply files
-        self.path = '../Data/Dales'
-
+        self.path = '../Data'
+        
         # Path of the training files
         self.train_path = join(self.path, 'train_bin')
         self.test_path = join(self.path, 'test_bin')
