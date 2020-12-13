@@ -58,7 +58,7 @@ You can use WinSCP for the same (more convenient). For more details use [this li
 
 ## 5.	Configuring the instance for KPConv
 -	After successfully logging into the instance. Transfer the setup.sh file to the {Home} location and run it.-  
--	Mount the extra 500 GB HDD to the system using the guide AWS_help.md
+-	Mount the extra 500 GB HDD to the system using the guide [AWS_help.md](AWS_help.md)
 -	Copy the files of data into a specific folder (Preferably in the 500GB HDD):(yet to make this change in code from ../Data/)  
 Create the folder tree looks like this
 ```
