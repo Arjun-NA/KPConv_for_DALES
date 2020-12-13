@@ -14,7 +14,8 @@ Adding storage to the running instance. (You should have already done the volume
 ```
 cd /
 sudo mount /dev/[storage_name] /media/NewVol/
-``` <br>
+``` 
+<br>
 [storage_name] 
 : This should be found out on your own. This can be found out by checking the directory list using the ``` ls``` command in /dev/ folder before and after you attach the volume (Notice the change in it) to the instance via AWS Management Console.
 <br>some common names look like nvme1n1 or SDF or XDF
