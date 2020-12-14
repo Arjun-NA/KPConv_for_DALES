@@ -1,8 +1,19 @@
 
 # AWS Commands for EC2 instance
  
-Basics and Advanced commands which is useful for setting up and running Amazon AMI EC2 instance
- 
+Basics and Advanced commands which is useful for setting up and running Amazon AMI EC2 instance  
+
+## Managing External Storage  
+
+Command used to list all usable storage  
+```sudo lsblk ```  
+
+Command for creating partition
+```
+sudo parted /dev/sda mklabel gpt
+sudo parted -a opt /dev/sda mkpart primary ext4 0% 100%
+```  
+
 ## Mounting an extra storage eg: HDD storage  
 
 Create the mounting point using the following commands  
