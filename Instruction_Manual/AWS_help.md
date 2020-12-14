@@ -1,10 +1,11 @@
 
 # AWS Commands for EC2 instance
  
-Basics and Advanced commands which is useful for setting up and running Amazon AMI EC2 instance. For more detailed guide [try here](https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux)  
+Basics and Advanced commands which is useful for setting up and running Amazon AMI EC2 instance.   
 
 ## Managing External Storage  
-
+  
+For more detailed guide [try here](https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux)
 Command used to list all usable storage  
 ```
 sudo lsblk
