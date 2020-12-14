@@ -35,7 +35,7 @@ sudo mkdir media/NewVol/
 Adding storage to the running instance. (You should have already done the volume attach to the instance from the AWS Management Console)
 ```
 cd /
-sudo mount /dev/[storage_name] /media/NewVol/
+sudo mount -t ext4 /dev/[storage_name] /media/NewVol/
 ``` 
 <br>
 [storage_name] 
