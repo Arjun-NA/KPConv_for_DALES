@@ -6,13 +6,24 @@ Basics and Advanced commands which is useful for setting up and running Amazon A
 ## Managing External Storage  
 
 Command used to list all usable storage  
-```sudo lsblk ```  
-
+```
+sudo lsblk
+```  
+Some versions of lsblk will print all of this information if we type:
+```
+sudo lsblk --fs
+```
 Command for creating partition
 ```
 sudo parted /dev/sda mklabel gpt
 sudo parted -a opt /dev/sda mkpart primary ext4 0% 100%
 ```  
+
+Create a Filesystem on the New Partition
+```
+sudo mkfs.ext4 -L datapartition /dev/sda1
+``` 
+  
 
 ## Mounting an extra storage eg: HDD storage  
 
@@ -34,8 +45,12 @@ sudo mount /dev/[storage_name] /media/NewVol/
 
 
 ## Copying files from/to s3 
-` aws s3 cp filename_from filename_to `
+```
+aws s3 cp filename_from filename_to 
+```
 
 ## Copying folder from local storage to AWS s3 
 As the usage of cp does not help in copying folder from the instance to the s3 cloud we utilize sync <br>
-` aws s3 sync folder_to_copy S3_URL `
+```
+aws s3 sync folder_to_copy S3_URL 
+```
