@@ -47,7 +47,8 @@ sudo mount -t ext4 /dev/[storage_name] /media/NewVol/
 
 ## Copying files from/to s3 
 ```
-aws s3 cp filename_from filename_to 
+aws s3 cp filename_from filename_to  
+aws s3 cp --recursive folder_from folder_to  
 ```
 
 ## Copying folder from local storage to AWS s3 
@@ -64,10 +65,10 @@ Fix for the error **"Unable to locate credentials"**
 For general use, the aws configure command is the fastest way to set up your AWS CLI installation.  
 
 the AWS CLI prompts you for four pieces of information:
--Access key ID 
--Secret access key
--AWS Region
--Output format  
+- Access key ID (for each user have max 2. It can be found from IAM -> Users ->Select user -> Security credentials )
+- Secret access key (for each user have max 2)
+- AWS Region (eg: us-east-2)
+- Output format  (you can leave it at none)
 
   
 
