@@ -55,3 +55,22 @@ As the usage of cp does not help in copying folder from the instance to the s3 c
 ```
 aws s3 sync folder_to_copy S3_URL 
 ```
+
+## Configuring AWS credentials to access S3  
+Fix for the error **"Unable to locate credentials"**  
+
+### Quick configuration with aws configure
+
+For general use, the aws configure command is the fastest way to set up your AWS CLI installation.  
+
+the AWS CLI prompts you for four pieces of information:
+-Access key ID 
+-Secret access key
+-AWS Region
+-Output format  
+
+  
+
+
+
+
